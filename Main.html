@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Petrograd</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quintessential" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="top" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+                <span class = "icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse navHeaderCollapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class><a href="#top" class="scroll">Velkommen</a></li>
+                   <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu<span class="caret"></span></a>
+                    <ul id="drop" class="dropdown-menu">
+                        <li><a href="#forretter" class="scroll">Forretter</a></li>
+                        <li><a href="#hovedretter" class="scroll">Hovedretter</a></li>
+                        <li><a href="#desserter" class="scroll">Desserter</a></li>
+                        <li><a href="#drikkevarer" class="scroll">Drikkevarer</a></li>
+                        <li><a href="#sideOrders">Sideorders</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt" class="scroll">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Restaurant Petrograd</h1>
+        <h3>God mad og trygge omgivelser</h3>
+      </div>
+    </div>
+
+    <div id="menu" class="container-fluid">
+        <div class="row">
+          <div class="event col-xs-7 col-xs-push-5 col-sm-7 col-sm-push-5">
+                <h1><b>Menu</b></h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+    <table>
+       <tr>
+          <th>Ret</th>
+          <th>Kategori</th>
+          <th>Pris</th>
+          <th>Beskrivelse</th>
+       </tr>
+       <tr>
+           <td>Russisk ringbrød med vindruer</td>
+           <td>Forret</td>
+           <td>39 DKK</td>
+           <td>Russisk ringbrød af Karapatisk mel</td>
+           <td class="knap">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal">
+  Flere detaljer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel">Informationer</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="text">
+        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
+         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
+         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
+         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
+          </div>
+          <div class="picture">
+              <img src="imgs/small/ringbroed-druer-sm.jpg">
+          </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
+      </div>
+  </div>
+</div>
+    </div>
+        </div>
+        </td>
+           </tr>
+       <tr>
+           <td>Bulgarsk bondesuppe</td>
+           <td>Hovedret</td>
+           <td>99 DKK</td>
+           <td>Cauceskus bulgarske bondesuppe</td>
+        <td class="knap">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal2">
+  Flere detaljer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel1">Informationer</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="text">
+        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
+         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
+         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
+         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
+          </div>
+          <div class="picture">
+              <img src="imgs/small/bulgarskbondesuppe-sm.jpg">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
+      </div>
+  </div>
+</div>
+    </div>
+        </td>
+       </tr>
+
+       <tr>
+           <td>Pandekager med kaviar</td>
+           <td>Dessert</td>
+           <td>79 DKK</td>
+           <td>Brænde pandekager med Bordyriske ørne-kaviar</td>
+        <td class="knap">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal3">
+  Flere detaljer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel2">Informationer</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="text">
+        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
+         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
+         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
+         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
+          </div>
+          <div class="picture">
+              <img src="imgs/small/kaviarpandekager-sm.jpg">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
+      </div>
+  </div>
+</div>
+    </div>
+        </td>
+       </tr>
+
+       <tr>
+           <td>Bochkarev fadøl</td>
+           <td>Drik</td>
+           <td>55 DKK</td>
+           <td>En halv liter Bochkarev fadøl</td>
+        <td class="knap">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal4">
+  Flere detaljer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel3">Informationer</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="text">
+        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
+         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
+         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
+         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
+          </div>
+          <div class="picture">
+              <img src="imgs/small/bochkarev-sm.jpg">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
+      </div>
+  </div>
+</div>
+    </div>
+        </td>
+       </tr>
+
+       <tr>
+           <td>Murmanske bondeboller</td>
+           <td>Side orders</td>
+           <td>19 DKK</td>
+           <td>Murmanske bondeboller bagt i stenovn</td>
+        <td class="knap">
+            <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal5">
+  Flere detaljer
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="exampleModalLabel4">Informationer</h1>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="text">
+        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
+         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
+         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
+         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
+          </div>
+          <div class="picture">
+              <img src="imgs/small/moldaviskfiskesuppe-sm.jpg">
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
+      </div>
+  </div>
+</div>
+    </div>
+        </td>
+       </tr>
+    </table>
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

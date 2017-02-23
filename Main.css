@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 7vw !important
+}
+
+h2 {
+    font-family: 'Quintessential', cursive !important;
+    font-size: 4vw !important;
+}
+
+#menu {
+    margin-bottom: 5vw;
+}
+
+.jumbotron {
+    background-image:url(imgs/Jumbo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    text-align: center;
+    color: #ffffff !important;
+    font-family: 'Dancing Script', cursive !important;
+}
+
+/*Navbar*/
+
+.navbar, #drop {
+    font-family: 'Amatic SC', cursive;
+    padding-right: 2vw;
+    font-size: 2vw;
+}
+
+/*Table*/
+
+table {
+    font-family: 'Quintessential', cursive;
+    font-size: 1.3vw;
+    width: 100%;
+    margin-bottom: 8vw;
+    border-collapse: collapse;
+}
+
+th {
+    font-size: 2vw;
+}
+
+td {
+    width: 20%;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.knap {
+    padding-left: 7vw;
+}
+
+@media screen and (max-width: 767px) {
+
+.jumbotron {
+    height: 400px;
+    }
+
+h1 {
+    font-size: 10vw !important;
+    }
+
+h2 {
+    font-size: 8vw !important;
+    }
+
+th {
+    font-size: 4vw;
+    }
+
+td {
+    font-size: 3vw;
+    }
+
+.nav {
+    font-size: 6vw;
+    }
+
+#drop {
+    font-size: 5vw;
+    }
+}
