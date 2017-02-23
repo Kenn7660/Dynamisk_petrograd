@@ -58,21 +58,21 @@
     </div>
 
     <div class="container">
-    <table>
+    <table class="produkt_liste">
        <tr>
           <th>Ret</th>
           <th>Kategori</th>
           <th>Pris</th>
           <th>Beskrivelse</th>
-          <th>Status</th>
        </tr>
-       <tr class="produkt_liste">
-          <template class="produkt_template">
-           <td class="data_navn">Russisk ringbrød med vindruer</td>
-           <td class="data_kategori">Forret</td>
-           <td class="pris"><span class="data_pris">39 DKK</span></td>
-           <td class="beskrivelse">Russisk ringbrød af Karapatisk mel</td>
-           <td class="udsolgt"></td>
+
+
+    <template class="produkt_template">
+          <tr>
+           <td class="data_navn"></td>
+           <td class="data_kategori"></td>
+           <td class="pris"><span class="data_pris"></span></td>
+           <td class="beskrivelse"></td>
            <td class="knap">
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal">
@@ -94,9 +94,10 @@
         <p><b>Beskrivelse: </b><span class="data_langB"></span></p>
          <p><b>Rabat-pris: </b><span class="data_rabat"></span></p>
          <p><b>Vegetar egnethed: </b><span class="data_vegetar"></span></p>
+         <p><b>Status: </b><span class="udsolgt"></span></p>
           </div>
-          <div class="picture">
-              <img src="imgs/small/ringbroed-druer-sm.jpg">
+          <div>
+          <img class="data_billede" src="imgs/small/ringbroed-druer-sm.jpg">
           </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
@@ -108,175 +109,8 @@
         </td>
            </tr>
         </template>
-
-       <tr>
-           <td>Bulgarsk bondesuppe</td>
-           <td>Hovedret</td>
-           <td>99 DKK</td>
-           <td>Cauceskus bulgarske bondesuppe</td>
-           <td class="udsolgt"></td>
-        <td class="knap">
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal2">
-  Flere detaljer
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel1">Informationer</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <div class="text">
-        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
-         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
-          </div>
-          <div class="picture">
-              <img src="imgs/small/bulgarskbondesuppe-sm.jpg">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
-      </div>
-  </div>
-</div>
+        </table>
     </div>
-        </td>
-       </tr>
-
-       <tr>
-           <td>Pandekager med kaviar</td>
-           <td>Dessert</td>
-           <td>79 DKK</td>
-           <td>Brænde pandekager med Bordyriske ørne-kaviar</td>
-           <td class="udsolgt"></td>
-        <td class="knap">
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal3">
-  Flere detaljer
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel2">Informationer</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <div class="text">
-        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
-         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
-          </div>
-          <div class="picture">
-              <img src="imgs/small/kaviarpandekager-sm.jpg">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
-      </div>
-  </div>
-</div>
-    </div>
-        </td>
-       </tr>
-
-       <tr>
-           <td>Bochkarev fadøl</td>
-           <td>Drik</td>
-           <td>55 DKK</td>
-           <td>En halv liter Bochkarev fadøl</td>
-           <td class="udsolgt"></td>
-        <td class="knap">
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal4">
-  Flere detaljer
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel3">Informationer</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <div class="text">
-        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
-         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
-          </div>
-          <div class="picture">
-              <img src="imgs/small/bochkarev-sm.jpg">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
-      </div>
-  </div>
-</div>
-    </div>
-        </td>
-       </tr>
-
-       <tr>
-           <td>Murmanske bondeboller</td>
-           <td>Side orders</td>
-           <td>19 DKK</td>
-           <td>Murmanske bondeboller bagt i stenovn</td>
-           <td class="udsolgt"></td>
-        <td class="knap">
-            <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal5">
-  Flere detaljer
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel4">Informationer</h1>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       <div class="text">
-        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
-         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
-         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
-          </div>
-          <div class="picture">
-              <img src="imgs/small/moldaviskfiskesuppe-sm.jpg">
-          </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Luk</button>
-      </div>
-  </div>
-</div>
-    </div>
-        </td>
-       </tr>
-    </table>
-    </div>
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

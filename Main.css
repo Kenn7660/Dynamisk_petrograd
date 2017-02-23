@@ -57,6 +57,10 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
+.knap{
+    padding-left: 4vw;
+}
+
 
 
 @media screen and (max-width: 767px) {
