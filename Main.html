@@ -64,12 +64,15 @@
           <th>Kategori</th>
           <th>Pris</th>
           <th>Beskrivelse</th>
+          <th>Status</th>
        </tr>
+<template class="produkt_template">
        <tr>
-           <td>Russisk ringbrød med vindruer</td>
-           <td>Forret</td>
-           <td>39 DKK</td>
-           <td>Russisk ringbrød af Karapatisk mel</td>
+           <td class="data_navn">Russisk ringbrød med vindruer</td>
+           <td class="data_kategori">Forret</td>
+           <td class="pris"><span class="data_pris">39 DKK</span></td>
+           <td class="beskrivelse">Russisk ringbrød af Karapatisk mel</td>
+           <td class="udsolgt"></td>
            <td class="knap">
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal">
@@ -88,10 +91,9 @@
       </div>
       <div class="modal-body">
        <div class="text">
-        <p><b>Beskrivelse: </b><span class="data_email"></span></p>
-         <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
-         <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
+        <p><b>Beskrivelse: </b><span class="data_langB"></span></p>
+         <p><b>Rabat-pris: </b><span class="data_rabat"></span></p>
+         <p><b>Vegetar egnethed: </b><span class="data_vegetar"></span></p>
           </div>
           <div class="picture">
               <img src="imgs/small/ringbroed-druer-sm.jpg">
@@ -105,11 +107,13 @@
         </div>
         </td>
            </tr>
+        </template>
        <tr>
            <td>Bulgarsk bondesuppe</td>
            <td>Hovedret</td>
            <td>99 DKK</td>
            <td>Cauceskus bulgarske bondesuppe</td>
+           <td class="udsolgt"></td>
         <td class="knap">
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal2">
@@ -130,7 +134,6 @@
        <div class="text">
         <p><b>Beskrivelse: </b><span class="data_email"></span></p>
          <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
          <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
           </div>
           <div class="picture">
@@ -151,6 +154,7 @@
            <td>Dessert</td>
            <td>79 DKK</td>
            <td>Brænde pandekager med Bordyriske ørne-kaviar</td>
+           <td class="udsolgt"></td>
         <td class="knap">
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal3">
@@ -171,7 +175,6 @@
        <div class="text">
         <p><b>Beskrivelse: </b><span class="data_email"></span></p>
          <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
          <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
           </div>
           <div class="picture">
@@ -192,6 +195,7 @@
            <td>Drik</td>
            <td>55 DKK</td>
            <td>En halv liter Bochkarev fadøl</td>
+           <td class="udsolgt"></td>
         <td class="knap">
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal4">
@@ -212,7 +216,6 @@
        <div class="text">
         <p><b>Beskrivelse: </b><span class="data_email"></span></p>
          <p><b>Rabat-pris: </b><span class="data_alder"></span></p>
-         <p><b>Udsolgt status: </b><span class="data_hoejde"></span></p>
          <p><b>Vegetar egnethed: </b><span class="data_by"></span></p>
           </div>
           <div class="picture">
@@ -233,6 +236,7 @@
            <td>Side orders</td>
            <td>19 DKK</td>
            <td>Murmanske bondeboller bagt i stenovn</td>
+           <td class="udsolgt"></td>
         <td class="knap">
             <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal5">
