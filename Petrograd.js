@@ -16,6 +16,8 @@ function visProdukt( produkt ) {
 
     klon.querySelector(".data_navn").innerHTML = produkt.navn;
     klon.querySelector(".data_pris").innerHTML = produkt.pris+" DKK";
+    klon.querySelector(".data_kategori").innerHTML = produkt.kategori;
+    klon.querySelector(".data_beskrivelse").innerHTML = produkt.kortbeskrivelse;
 
     var rabatpris = Math.ceil(produkt.pris - (produkt.pris*produkt.rabatsats/100));
     klon.querySelector(".data_rabat").innerHTML = rabatpris;
