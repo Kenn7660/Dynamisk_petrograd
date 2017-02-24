@@ -6,6 +6,7 @@ function sidenVises() {
     $.getJSON("http://petlatkea.dk/2017/dui/api/productlist?callback=?", visProduktListe);
 }
 
+
 function visProduktListe( listen ) {
     console.table( listen );
     listen.forEach( visProdukt )
@@ -19,15 +20,34 @@ function visProdukt( produkt ) {
     klon.querySelector(".data_kategori").innerHTML = produkt.kategori;
     klon.querySelector(".data_beskrivelse").innerHTML = produkt.kortbeskrivelse;
 
-    var rabatpris = Math.ceil(produkt.pris - (produkt.pris*produkt.rabatsats/100));
-    klon.querySelector(".data_rabat").innerHTML = rabatpris;
-
-    klon.querySelector(".data_billede").src = "/imgs/small/" + produkt.billede + "-sm.jpg";
+    klon.querySelector('button').dataset.id = produkt.id;
+    klon.querySelector('button').addEventListener('click', knapKlikket)
 
     if(produkt.udsolgt == false) {
         var udsolgttekst = klon.querySelector(".udsolgt");
         udsolgttekst.parentNode.removeChild( udsolgttekst );
     }
 
+
     document.querySelector(".produkt_liste").appendChild(klon);
+}
+
+
+function knapKlikket(oplysningOmEventet){
+    var produktId = oplysningOmEventet.target.dataset.id;
+
+    $.getJSON("http://petlatkea.dk/2017/dui/api/product?callback=?&id="+produktId, visModalIndhold);
+}
+
+function visModalIndhold(mereInfo) {
+    console.log(mereInfo);
+    document.querySelector('#myModalLabel').textContent = mereInfo.navn;
+    document.querySelector('.data_langB').textContent = mereInfo.langbeskrivelse;
+    document.querySelector('.data_billede').src = "/imgs/small/" + mereInfo.billede + "-sm.jpg";
+
+    var rabatpris = Math.ceil(mereInfo.pris - (mereInfo.pris*mereInfo.rabatsats/100));
+    document.querySelector(".data_rabat").innerHTML = rabatpris+" DKK";
+
+
+
 }

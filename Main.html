@@ -48,7 +48,9 @@
         </div>
     </div>
 
+
     <div id="menu" class="container">
+        <a class="vegetar" href = "#menu"><p>Vegetar</p></a>
     <table class="produkt_liste">
        <tr>
           <th>Ret</th>
@@ -66,8 +68,8 @@
            <td class="data_beskrivelse"></td>
            <td class="knap">
             <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal">
-  Flere detaljer
+<button data_id="UDSKIFT_MIG" type="button" class="btn btn-primary modalknap" data-toggle="modal" data-target="#myModal">
+  Mere info
 </button>
 
 <!-- Modal -->
@@ -75,7 +77,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel">Informationer</h1>
+        <h2 class="modal-title" id="myModalLabel"></h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -85,7 +87,7 @@
         <p><b>Beskrivelse: </b><span class="data_langB"></span></p>
          <p><b>Rabat-pris: </b><span class="data_rabat"></span></p>
          <p><b>Vegetar egnethed: </b><span class="data_vegetar"></span></p>
-         <p><b>Status: </b><span class="udsolgt"></span></p>
+         <p class="udsolgt">Udsolgt</p>
           </div>
           <div>
           <img class="data_billede" src="imgs/small/ringbroed-druer-sm.jpg">

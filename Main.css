@@ -21,7 +21,7 @@ h2 {
     background-image:url(imgs/Jumbo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     text-align: center;
     color: #ffffff !important;
     font-family: 'Dancing Script', cursive !important;
@@ -57,11 +57,13 @@ tr:nth-child(even) {
     background-color: #dddddd;
 }
 
-.knap{
-    padding-left: 4vw;
+.knap {
+    text-align: center;
 }
 
-
+.text {
+    text-align: left !important;
+}
 
 @media screen and (max-width: 767px) {
 
