@@ -21,12 +21,7 @@ function visProdukt( produkt ) {
     klon.querySelector(".data_beskrivelse").innerHTML = produkt.kortbeskrivelse;
 
     klon.querySelector('button').dataset.id = produkt.id;
-    klon.querySelector('button').addEventListener('click', knapKlikket)
-
-    if(produkt.udsolgt == false) {
-        var udsolgttekst = klon.querySelector(".udsolgt");
-        udsolgttekst.parentNode.removeChild( udsolgttekst );
-    }
+    klon.querySelector('button').addEventListener('click', knapKlikket);
 
 
     document.querySelector(".produkt_liste").appendChild(klon);
@@ -48,6 +43,14 @@ function visModalIndhold(mereInfo) {
     var rabatpris = Math.ceil(mereInfo.pris - (mereInfo.pris*mereInfo.rabatsats/100));
     document.querySelector(".data_rabat").innerHTML = rabatpris+" DKK";
 
+    if(mereInfo.vegetar == false) {
+    var vegetartekst = document.querySelector(".data_vegetar");
+    vegetartekst.parentNode.removeChild(vegetartekst);
+    }
 
-
+    if(mereInfo.udsolgt == false) {
+        var udsolgttekst = document.querySelector(".udsolgt");
+        udsolgttekst.parentNode.removeChild(udsolgttekst);
+    }
 }
+
