@@ -20,6 +20,16 @@ function visProdukt( produkt ) {
     klon.querySelector(".data_kategori").innerHTML = produkt.kategori;
     klon.querySelector(".data_beskrivelse").innerHTML = produkt.kortbeskrivelse;
 
+    var rabatpris = Math.ceil(produkt.pris - (produkt.pris*produkt.rabatsats/100));
+    klon.querySelector(".data_rabat").innerHTML = rabatpris+" DKK";
+
+    if(produkt.rabatsats == 0) {
+        var rabatpris = klon.querySelector(".data_rabat");
+        rabatpris.parentNode.removeChild(rabatpris);
+    } else {
+        klon.querySelector(".pris").classList.add("rabat");
+    }
+
     klon.querySelector('button').dataset.id = produkt.id;
     klon.querySelector('button').addEventListener('click', knapKlikket);
 
@@ -40,8 +50,6 @@ function visModalIndhold(mereInfo) {
     document.querySelector('.data_langB').textContent = mereInfo.langbeskrivelse;
     document.querySelector('.data_billede').src = "/imgs/small/" + mereInfo.billede + "-sm.jpg";
 
-    var rabatpris = Math.ceil(mereInfo.pris - (mereInfo.pris*mereInfo.rabatsats/100));
-    document.querySelector(".data_rabat").innerHTML = rabatpris+" DKK";
 
     if(mereInfo.vegetar == false) {
     var vegetartekst = document.querySelector(".data_vegetar");

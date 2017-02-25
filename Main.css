@@ -27,6 +27,14 @@ h2 {
     font-family: 'Dancing Script', cursive !important;
 }
 
+.data_pris {
+    color: forestgreen;
+}
+
+.data_rabat {
+    color: red;
+}
+
 /*Navbar*/
 
 .navbar, #drop {
