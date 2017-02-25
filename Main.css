@@ -65,6 +65,10 @@ tr:nth-child(even) {
     text-align: left !important;
 }
 
+footer {
+    text-align: center;
+}
+
 @media screen and (max-width: 767px) {
 
 .jumbotron {
@@ -94,4 +98,5 @@ td {
 #drop {
     font-size: 5vw;
     }
+
 }
